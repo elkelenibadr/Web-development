@@ -3,8 +3,9 @@
     background-repeat: no-repeat;
     background-image: url("../images/header.jpg");
     background-size: cover;
-    height: 70px;
-    padding: 10px;
+    height: 90px;
+    padding-left: 0.6em;
+    padding-top: 0.1em;
 }
 
 body
@@ -18,13 +19,21 @@ section
 {
     margin-top: 0;
 }
+
 .header > h1
 {
     font-size: 2em;
     color: white;
     margin: 0;
 }
-header h1{
+
+article header h1
+{
+    padding-top: 2em;
+}
+
+header h1
+{
     margin: 4px 0;
 }
 
@@ -34,9 +43,12 @@ article
     margin: 0 4px;
     padding: 0 4px;
 }
-article footer{
+
+article footer
+{
     font-size: 0.8em;
 }
+
 p
 {
     font-size: 0.68em;
@@ -46,7 +58,7 @@ article header
 {
     color: #444451;
     text-decoration: underline;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 nav
