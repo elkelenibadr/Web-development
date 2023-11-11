@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #555;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.naam, .badr, .telefoon, .adres, .pers, .email {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.profile-picture {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20%;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid lightgray;
+    text-align: center;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.datagrid table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.datagrid {
+    font: normal 12px/150% Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    border: 1px solid #A65B1A;
+    border-radius: 3px;
+}
+
+.datagrid table td, .datagrid table th {
+    padding: 3px 10px;
+}
+
+.datagrid table thead th {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #A65B1A), color-stop(1, #7F4614) );
+    background-color:#A65B1A;
+    color:#FFFFFF;
+    font-size: 15px;
+}
+
+.datagrid table tbody td {
+    color: #7F4614;
+    border-left: 1px solid #D9CFB8;
+    font-size: 12px;
+}
+
+.datagrid table tbody .alt td {
+    background: #F0E5CC;
+    color: #7F4614;
+}
