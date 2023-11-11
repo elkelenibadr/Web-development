@@ -20,10 +20,6 @@ p {
     margin-bottom: 10px;
 }
 
-.naam, .badr, .telefoon, .adres, .pers, .email {
-    text-align: center;
-}
-
 ul {
     list-style-type: none;
     padding: 0;
@@ -100,4 +96,8 @@ table {
 .datagrid table tbody .alt td {
     background: #F0E5CC;
     color: #7F4614;
+}
+
+.onbekend {
+    background-color: red;
 }
