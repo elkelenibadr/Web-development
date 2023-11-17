@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+    float: left;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.clear{
+    clear: both;
+}
