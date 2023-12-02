@@ -1,2 +1,19 @@
+.lichtgrijs{
+    background-color: rgb(219,223,229);
+}
 
+.donkergrijs{
+    background-color: rgb(171,177,184);
+}
 
+div[class*="col"] {
+    height: 200px;
+    border: 5px solid white;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.lijn{
+    border-bottom: 3px solid rgb(245,245,245);
+    margin-bottom: 20px;
+}
