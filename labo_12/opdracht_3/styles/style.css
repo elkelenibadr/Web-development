@@ -1,14 +1,26 @@
 html {
     background-color: #333;
     font-family: helvetica, sans-serif;
+    border: 20px solid black;
 }
 
 * {
     padding: 10px;
 }
 
+body{
+    font-size: 1em;
+    margin: 5px;
+}
+
 header, footer{
-    background: #ddaa00;
+    background-color: #ddaa00;
+    text-align: center;
+    color: white;
+}
+
+main{
+    background-color: grey;
 }
 
 a {
@@ -17,12 +29,30 @@ a {
 
 nav{
     background-color: #ccc;
+    padding: 5px 2px;
 }
 
-main{
-    background-color: grey;
+nav a{
+    border: 1px solid #ccc;
+    margin: 0 5px;
 }
 
-body{
-    font-size: 1em;
+section a{
+    border: 1px solid #333;
+}
+
+section{
+    margin: 5px;
+}
+
+img{
+    padding: 0;
+}
+
+h1{
+    margin: 0;
+}
+
+@media screen and (min-width: 701px) {
+
 }
