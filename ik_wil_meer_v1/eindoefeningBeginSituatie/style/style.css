@@ -1,6 +1,7 @@
 .grid {
     display: grid;
     text-align: center;
+    grid-template-rows: 50px 50px 350px 50px 50px;
 }
 
 .caption {
@@ -16,6 +17,8 @@
 
 .gridNav {
     background-color: #c6c0ff;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .gridMain {
@@ -30,20 +33,9 @@
     background-color: #ffd1d1;
 }
 
-@media screen and (max-width: 785px){
-    .grid{
-        grid-template-rows: 50px 50px 350px 50px 50px;
-    }
-
-    .gridNav{
-        background-color: #c6c0ff;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-    span{
-        position: relative;
-        top: 15px;
-    }
+span{
+    position: relative;
+    top: 15px;
 }
 
 @media screen and (min-width: 787px) {
