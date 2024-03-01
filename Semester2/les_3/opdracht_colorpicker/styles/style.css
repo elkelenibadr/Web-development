@@ -1,0 +1,29 @@
+.colorPicker {
+    width:400px;
+    height:70px;
+    border:5px solid lightgray;
+    display: flex;
+    border-radius: 12px;
+    padding: 10px 0 15px 10px;
+}
+
+.components{
+    margin-right: 10px;
+}
+
+.swatch{
+    display: inline-block;
+    margin: 0 0 0 1em;
+    width:5em;
+    height:4em;
+    border:1px solid black;
+    border-radius: 5px;
+}
+
+.space{
+    margin-right: 20px;
+}
+
+.spaceGreen{
+    margin-right: 10px;
+}
