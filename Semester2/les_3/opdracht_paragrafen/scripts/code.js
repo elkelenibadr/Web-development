@@ -5,4 +5,4 @@ const setup = () => {
     });
 };
 
-document.addEventListener("DOMContentLoaded", setup);
+document.addEventListener("load", setup);
