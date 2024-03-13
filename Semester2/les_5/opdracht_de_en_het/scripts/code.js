@@ -12,7 +12,7 @@ const vervangDeDoorHet = (tekst) => {
             if (woorden[i - 1]) {
                 woorden[i] = 'het' + woorden[i].slice(2);
             } else {
-                woorden[i] = 'het';
+                woorden[i] = 'Het';
             }
         }
     }
