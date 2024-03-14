@@ -96,16 +96,6 @@ const isValidEmail = (email) => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 };
 
-const isValid = () =>{
-    if (!errVoornaam.textContent &&
-        !familienaamError.textContent &&
-        !geboortedatumError.textContent &&
-        !emailError.textContent &&
-        !aantalKinderenError.textContent) {
-        alert('proficiat!');
-    }
-}
-
 const toonProficiat = () => {
     let invalidInputs = document.querySelectorAll(".invalid");
     if (invalidInputs.length === 0) {
