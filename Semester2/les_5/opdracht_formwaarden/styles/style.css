@@ -1,0 +1,16 @@
+.radio{
+    display: flex;
+}
+
+.bestellingen {
+    display: flex;
+    align-items: center;
+}
+
+.bestellingen label {
+    margin-right: 10px;
+}
+
+.woordbestelling{
+    margin-top: -3.3em;
+}

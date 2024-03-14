@@ -6,12 +6,13 @@
     <title>Title</title>
 </head>
 <body>
-<form id="myForm">
+<form id="form">
     <div>
         <label for="isRoker">Is roker</label>
         <input type="checkbox" id="isRoker" name="isRoker">
     </div>
-    <div>
+    <br>
+    <div class="radio">
         <label id="moedertaal">Moedertaal</label><br>
         <input type="radio" id="nl" name="moedertaal" value="nl">
         <label for="nl">Nederlands</label><br>
@@ -20,6 +21,7 @@
         <input type="radio" id="en" name="moedertaal" value="en">
         <label for="en">Engels</label><br>
     </div>
+    <br>
     <div>
         <label for="favBuurland">Favoriete buurland</label>
         <select name="favBuurland" id="favBuurland">
@@ -28,8 +30,9 @@
             <option value="Duitsland">Duitsland</option>
         </select>
     </div>
-    <div>
-        <label for="bestelling">Bestelling</label>
+    <br>
+    <div class="bestellingen">
+        <label class="woordbestelling" for="bestelling">Bestelling</label>
         <select id="bestelling" name="bestelling" multiple>
             <option value="aardappelen">aardappelen</option>
             <option value="brood">brood</option>
@@ -39,7 +42,8 @@
             <option value="krant">krant</option>
         </select>
     </div>
-    <button type="button" onclick="toonResultaat()">Toon resultaat</button>
+    <br>
+    <button type="button" id="toonResultaatButton">Toon resultaat</button>
 </form>
 <script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
 </body>
