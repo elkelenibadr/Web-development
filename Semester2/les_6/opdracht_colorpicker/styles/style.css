@@ -32,3 +32,14 @@
     margin-left: 85px;
     margin-top: 50px;
 }
+
+#savedSwatches {
+    position: absolute;
+    left: 0;
+    top: 120px;
+}
+
+.delete-button{
+    margin-left: 57px;
+    border: 1px solid lightgray;
+}
