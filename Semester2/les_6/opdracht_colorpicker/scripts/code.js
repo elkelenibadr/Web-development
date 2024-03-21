@@ -58,13 +58,13 @@ const saveSwatch = () => {
     deleteButton.textContent = "X";
     deleteButton.classList.add("delete-button");
     deleteButton.addEventListener("click", () => {
+        event.stopPropagation();
         colorSwatchContainer.removeChild(colorSwatch);
     });
 
     colorSwatch.appendChild(deleteButton);
     colorSwatchContainer.appendChild(colorSwatch);
 
-    // Voeg event listener toe aan de opgeslagen swatch
     colorSwatch.addEventListener("click", () => {
         let rgb = colorSwatch.style.backgroundColor.match(/\d+/g);
         let sliders = document.getElementsByClassName("slider");
