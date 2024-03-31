@@ -1,4 +1,4 @@
-const global = {
+let global = {
     IMAGE_COUNT: 5,  // aantal figuren
     IMAGE_SIZE: 48, // grootte van de figuur
     IMAGE_PATH_PREFIX: "images/",  // map van de figuren
@@ -12,7 +12,7 @@ const setup = () => {
     const startButton = document.getElementById("startButton");
     startButton.addEventListener("click", startGame);
 
-    let target = document.getElementById("target");
+    const target = document.getElementById("target");
     let newNumber = Math.random() * 4;
     target.setAttribute("src", global.IMAGE_PATH_PREFIX + Math.round(newNumber) + global.IMAGE_PATH_SUFFIX);
 };
