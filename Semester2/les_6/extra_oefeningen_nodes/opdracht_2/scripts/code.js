@@ -13,8 +13,8 @@ const styleListItems = () => {
 };
 
 const image = () => {
-    const img = document.createElement("img");
-    img.setAttribute("src", "img/picture.jpg");
+    const img = document.createElement("images");
+    img.setAttribute("src", "images/picture.jpg");
     document.body.appendChild(img);
 };
 

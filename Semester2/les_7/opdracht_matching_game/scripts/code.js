@@ -2,7 +2,7 @@ let global = {
     AANTAL_HORIZONTAAL: 4,
     AANTAL_VERTICAAL: 3,
     AANTAL_KAARTEN: 6,
-    lijstImages: ["img/kaart1.png","img/kaart2.png","img/kaart3.png","img/kaart4.png","img/kaart5.png","img/kaart6.png"],
+    lijstImages: ["images/kaart1.png","images/kaart2.png","images/kaart3.png","images/kaart4.png","images/kaart5.png","images/kaart6.png"],
     lijst: [],
     lijstVoorkanten: []
 };
@@ -20,7 +20,7 @@ const setup = () => {
 
     global.lijst = alleKaarten.querySelectorAll("img")
     for (let i = 0; i < global.lijst.length; i++) {
-        global.lijst[i].setAttribute("src", "img/achterkant.png");
+        global.lijst[i].setAttribute("src", "images/achterkant.png");
     }
 
     let teller = 0
@@ -56,7 +56,7 @@ const handleClick = (getal) =>
     let kaarten = [];
 
     for (let i = 0; i < global.lijstVoorkanten.length; i++) {
-        if(global.lijst[i].getAttribute("src") !== "img/achterkant.png") {
+        if(global.lijst[i].getAttribute("src") !== "images/achterkant.png") {
             kaarten.push(i);
         }
     }
@@ -69,7 +69,7 @@ const handleClick = (getal) =>
 
             setTimeout(() => {
                 for (let i = 0; i < 2; i++) {
-                    global.lijst[kaarten[i]].setAttribute("src", "img/achterkant.png");
+                    global.lijst[kaarten[i]].setAttribute("src", "images/achterkant.png");
                     global.lijst[kaarten[i]].style.visibility = 'hidden';
                 }
                 alleKaarten.style.border = "5px dashed black";
@@ -77,8 +77,8 @@ const handleClick = (getal) =>
         } else {
             alleKaarten.style.border= "5px dashed red";
             setTimeout(() => {
-                global.lijst[kaarten[0]].setAttribute("src", "img/achterkant.png")
-                global.lijst[kaarten[1]].setAttribute("src", "img/achterkant.png")
+                global.lijst[kaarten[0]].setAttribute("src", "images/achterkant.png")
+                global.lijst[kaarten[1]].setAttribute("src", "images/achterkant.png")
                 alleKaarten.style.border= "5px dashed black";
             },1000);
         }
