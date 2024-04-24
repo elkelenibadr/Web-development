@@ -26,7 +26,7 @@ const showSettings = () => {
 
     // Maak een leeg settings object, of bouw het op basis
     // van de settings JSON string in local storage
-    if (settingsJSON == undefined) {
+    if (settingsJSON === undefined) {
         settings = {
             age: 0,
             weight: 0,
