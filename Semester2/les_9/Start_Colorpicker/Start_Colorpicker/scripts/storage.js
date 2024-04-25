@@ -1,37 +1,45 @@
 let allSwatches = [];
 let sliderValues = [];
+
 const storeSliderValues = () => {
-    sliderValues[sliderValues.length] = {
+    let colors = {
         red: document.getElementById("lblRed").textContent,
         green: document.getElementById("lblGreen").textContent,
         blue: document.getElementById("lblBlue").textContent
     };
+
+    sliderValues.push(colors);
     localStorage.setItem("sliderValues", JSON.stringify(sliderValues));
 };
 
-const restoreSliderValues = (red, green, blue) => {
-    let slidervalues = JSON.parse(localStorage.getItem("SliderValues"));
-    if(slidervalues){
-        document.getElementById("sldRed").value = slidervalues.red;
-        document.getElementById("sldBlue").value = slidervalues.blue;
+const restoreSliderValues = () => {
+    let slidervalues = JSON.parse(localStorage.getItem("sliderValues"));
+    if (slidervalues && slidervalues.length > 0) {
+        let slider = slidervalues[0];
+        document.getElementById("sldRed").value = slider.red;
+        document.getElementById("sldGreen").value = slider.green;
+        document.getElementById("sldBlue").value = slider.blue;
     }
 };
 
 const storeSwatches = () => {
 // bouw een array met kleurinfo objecten
-    let swatches = document.querySelectorAll(".swatch");
-    for(let i = 0; i < swatches.length; i++){
-        configureSwatch();
-    }
-    localStorage.setItem("swatchData", JSON.stringify(allSwatches));
+    let colors = {
+        red: document.getElementById("sldRed").value,
+        green: document.getElementById("sldGreen").value,
+        blue: document.getElementById("sldBlue").value
+    };
+
+    allSwatches.push(colors);
+    localStorage.setItem("swatches", JSON.stringify(allSwatches));
 };
 
 const restoreSwatches = () => {
-    let swatchData = JSON.parse(localStorage.getItem("allSwatches"));
-    if(swatchData){
-        for(let i = 0; i < swatchData.length; i++){
-            addSwatchComponent(swatchData[i].red, swatchData[i].green, swatchData[i].blue)
+    let swatches = JSON.parse(localStorage.getItem("swatches"));
+    if (swatches) {
+        for (let i = 0; i < swatches.length; i++) {
+            let color = swatches[i];
+            addSwatchComponent(color.red, color.green, color.blue);
         }
     }
 };
-
