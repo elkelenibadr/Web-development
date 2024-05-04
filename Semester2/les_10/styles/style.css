@@ -1,0 +1,32 @@
+.input{
+    width: 1150px;
+    padding-bottom: 4px;
+}
+
+.zoekopdracht{
+    margin-bottom: 9px;
+    font-size: small;
+}
+
+#zoeken{
+    padding-left: 11px;
+}
+
+#commando{
+    font-weight: lighter;
+    font-size: x-small;
+    margin-bottom: 8px;
+    margin-top: 2px;
+}
+
+#button{
+    background-color: rgb(40,172,68);
+    border: 2px rgb(164,212,172) solid;
+    border-radius: 5px;
+    color: white;
+}
+
+main > h2{
+    padding-left: 11px;
+    padding-top: 35px;
+}
